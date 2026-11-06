@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* Design tokens. Every colour, radius and shadow in the UI comes from here. */
+@theme {
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-ink-950: #0a1128;
+  --color-ink-900: #111a36;
+  --color-ink-800: #1e2a4d;
+  --color-ink-600: #47526f;
+  --color-ink-500: #5f6a85;
+  --color-ink-400: #8a93a8;
+
+  --color-line: #e4e7ef;
+  --color-line-strong: #d0d5e1;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f6fb;
+  --color-surface-sunken: #eceff7;
+
+  --color-brand-50: #eef0ff;
+  --color-brand-100: #dfe3ff;
+  --color-brand-300: #a3aeff;
+  --color-brand-500: #4c5ff5;
+  --color-brand-600: #3343e8;
+  --color-brand-700: #2733c4;
+
+  --color-deal: #e0402a;
+  --color-deal-soft: #feece8;
+  --color-success: #0d8a5f;
+  --color-success-soft: #e2f6ee;
+  --color-warning: #b36a00;
+  --color-warning-soft: #fdf1dc;
+  --color-star: #f5a524;
+
+  /* Category tile tints */
+  --color-tint-blue: #e6ecff;
+  --color-tint-violet: #ede8ff;
+  --color-tint-teal: #dcf3ef;
+  --color-tint-amber: #fdf0d8;
+  --color-tint-rose: #fde7ea;
+  --color-tint-slate: #e9edf4;
+
+  --radius-card: 1.25rem;
+  --radius-panel: 1.75rem;
+
+  --shadow-card: 0 1px 2px rgb(17 26 54 / 0.04), 0 8px 24px -12px rgb(17 26 54 / 0.1);
+  --shadow-lift: 0 2px 4px rgb(17 26 54 / 0.05), 0 20px 40px -16px rgb(17 26 54 / 0.2);
+  --shadow-overlay: 0 24px 64px -16px rgb(10 17 40 / 0.35);
+
+  --animate-drawer-right: drawer-right 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-drawer-left: drawer-left 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-fade-up: fade-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-toast: toast-in 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+
+  @keyframes drawer-right {
+    from { transform: translateX(100%); }
+  }
+  @keyframes drawer-left {
+    from { transform: translateX(-100%); }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(14px); }
+  }
+  @keyframes toast-in {
+    from { opacity: 0; transform: translateY(12px) scale(0.97); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  body {
+    background: var(--color-surface);
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 2px;
+  }
+
+  dialog::backdrop {
+    background: rgb(10 17 40 / 0.5);
+    backdrop-filter: blur(3px);
+  }
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
