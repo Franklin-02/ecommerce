@@ -115,7 +115,7 @@ export const products: Product[] = seeds.map((seed, index) => {
   return {
     id: `prd_${number}`,
     slug,
-    sku: `OHM-${seed.brand.slice(0, 3).toUpperCase()}-${number}`,
+    sku: `KCM-${seed.brand.slice(0, 3).toUpperCase()}-${number}`,
     name: `${seed.brand} ${seed.name}`,
     brandId: brand.id,
     brandName: brand.name,

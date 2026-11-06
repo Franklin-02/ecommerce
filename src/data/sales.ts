@@ -45,8 +45,8 @@ export const categorySales: CategorySales[] = categories
 
 export const notifications: Notification[] = [
   { id: "ntf_001", title: "Low stock", body: "Resona Pebble Mini Speaker has 3 units left", at: daysAgo(0, 9, 12), kind: "stock" },
-  { id: "ntf_002", title: "New high-value order", body: "OHM-104900 placed for over ₹50,000", at: daysAgo(0, 8, 40), kind: "order" },
-  { id: "ntf_003", title: "Return requested", body: "A customer opened a return on OHM-104592", at: daysAgo(1, 16, 5), kind: "customer" },
+  { id: "ntf_002", title: "New high-value order", body: "KCM-104900 placed for over ₹50,000", at: daysAgo(0, 8, 40), kind: "order" },
+  { id: "ntf_003", title: "Return requested", body: "A customer opened a return on KCM-104592", at: daysAgo(1, 16, 5), kind: "customer" },
   { id: "ntf_004", title: "Sold out", body: "Lumora Beam Desk Lamp is out of stock", at: daysAgo(1, 11, 30), kind: "stock" },
   { id: "ntf_005", title: "Promotion ending", body: "Deepavali Sale ends in 3 days", at: daysAgo(2, 10, 0), kind: "system" },
 ];

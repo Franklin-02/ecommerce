@@ -50,7 +50,7 @@ export function Footer() {
             ))}
           </ul>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs">
-            <span>© 2026 {siteConfig.name} Electronics, Chennai</span>
+            <span>© 2026 {siteConfig.name}, Chennai</span>
             <span>GSTIN {siteConfig.gstin}</span>
             <Link href="/admin" className="hover:text-white">
               Admin portal

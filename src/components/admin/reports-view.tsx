@@ -63,7 +63,7 @@ export function ReportsView({ sales, categorySales }: ReportsViewProps) {
   const products = topProducts(orders, period.days[0].date, period.revenue, 20);
 
   const exportCsv = () => {
-    const name = `ohmly-${report}-${range}-days.csv`;
+    const name = `kanishka-${report}-${range}-days.csv`;
     if (report === "sales") {
       downloadCsv(name, ["Date", "Revenue", "Orders", "Visitors"], period.days.map((day) => [day.date, day.revenue, day.orders, day.visitors]));
     } else if (report === "categories") {

@@ -2,7 +2,7 @@ import type { FooterColumn, NavLink } from "@/types/content";
 
 /** Brand and locale settings. Rebranding the prototype starts here. */
 export const siteConfig = {
-  name: "Ohmly",
+  name: "Kanishka Computer & Mobiles",
   tagline: "Electronics, properly sourced.",
   description:
     "Phones, audio, laptops, smart home and everything that powers them, from Chennai to Kanyakumari, with 2-year warranties and next-day delivery across Tamil Nadu.",
@@ -18,7 +18,7 @@ export const siteConfig = {
   emiMinimum: 3000,
   emiMonths: 6,
   supportPhone: "1800 555 0142",
-  supportEmail: "help@ohmly.example",
+  supportEmail: "help@kanishka.example",
 };
 
 export const announcements: { text: string; lang?: string }[] = [
@@ -76,7 +76,7 @@ export const footerColumns: FooterColumn[] = [
   {
     title: "Company",
     links: [
-      { label: "About Ohmly", href: "/about" },
+      { label: "About us", href: "/about" },
       { label: "Store finder", href: "/stores" },
       { label: "Business accounts", href: "/business" },
       { label: "Careers", href: "/careers" },

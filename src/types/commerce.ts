@@ -44,7 +44,7 @@ export interface OrderEvent {
 
 export interface Order {
   id: string;
-  /** Customer-facing reference, e.g. OHM-104821. */
+  /** Customer-facing reference, e.g. KCM-104821. */
   number: string;
   customerId: string;
   customerName: string;

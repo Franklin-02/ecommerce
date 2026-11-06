@@ -45,7 +45,7 @@ export function buildOrder({ lines, totals, delivery, payment, shippingAddress, 
   return {
     ...customer,
     id: `ord_web_${stamp.toString(36)}`,
-    number: `OHM-${String(stamp).slice(-6)}`,
+    number: `KCM-${String(stamp).slice(-6)}`,
     placedAt,
     status: "pending",
     paymentMethod: payment,

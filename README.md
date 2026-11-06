@@ -1,4 +1,4 @@
-# Ohmly: electronics marketplace prototype
+# Kanishka Computer & Mobiles: eCommerce prototype
 
 An electronics store for customers in India, focused on Tamil Nadu. A frontend-only prototype built with Next.js (App Router), React, TypeScript and Tailwind CSS. All data is mocked; there is no backend, real authentication or payment processing.
 
@@ -14,8 +14,8 @@ Signing in comes first: every page redirects to `/login` until a session exists,
 | Role | Demo account | Lands on |
 | --- | --- | --- |
 | Customer | `arun.kumar@example.com` (or any valid email and password, or register) | `/` storefront |
-| Employee | `kaviya.rajendran@ohmly.example` | `/employee` portal |
-| Admin | `revathi.natarajan@ohmly.example` | `/admin` portal |
+| Employee | `kaviya.rajendran@kanishka.example` | `/employee` portal |
+| Admin | `revathi.natarajan@kanishka.example` | `/admin` portal |
 
 Employee accounts are managed in **Admin > Employees**: each row carries a work email, a portal password and portal access (admin or employee), so an employee the admin creates can sign in straight away. Roles are enforced — a customer who opens `/admin` is sent home, an employee who opens `/admin` is sent to `/employee`, and staff opening the customer account area are sent to their portal. One browser holds one session (tabs stay in sync), so use a second browser window in private mode to run two roles side by side.
 

@@ -75,7 +75,7 @@ export const contentPages: Record<string, ContentPage> = {
         bullets: [
           "Open the order in your account, or contact support, to start your return.",
           "Pack the item with its accessories and original box if you still have it.",
-          "Drop it at any collection point or Ohmly store using the prepaid label.",
+          "Drop it at any collection point or Kanishka store using the prepaid label.",
         ],
       },
       {
@@ -115,21 +115,21 @@ export const contentPages: Record<string, ContentPage> = {
   },
   stores: {
     eyebrow: "Store finder",
-    title: "Visit an Ohmly store",
+    title: "Visit a Kanishka store",
     intro: "Try before you buy, get set up by an expert, or collect your order in as little as 2 hours.",
     sections: [],
     locations: [
-      { name: "Ohmly T. Nagar", address: "42, Usman Road, T. Nagar, Chennai – 600017", phone: "044 5550 1100", hours: "Mon–Sun 10am–9:30pm", services: ["Pickup", "Device setup", "Repairs", "Returns"] },
-      { name: "Ohmly Gandhipuram", address: "118, Cross Cut Road, Gandhipuram, Coimbatore – 641012", phone: "0422 555 1200", hours: "Mon–Sun 10am–9:30pm", services: ["Pickup", "Repairs", "Returns"] },
-      { name: "Ohmly Anna Nagar", address: "27, Anna Nagar Main Road, Madurai – 625020", phone: "0452 555 1300", hours: "Mon–Sun 10am–9pm", services: ["Pickup", "Device setup", "Recycling"] },
-      { name: "Ohmly Thillai Nagar", address: "9, Thillai Nagar Main Road, Tiruchirappalli – 620018", phone: "0431 555 1400", hours: "Mon–Sun 10am–9pm", services: ["Pickup", "Repairs", "Recycling"] },
-      { name: "Ohmly Fairlands", address: "61, Omalur Main Road, Salem – 636004", phone: "0427 555 1500", hours: "Mon–Sun 10am–9pm", services: ["Pickup", "Device setup", "Returns"] },
+      { name: "Kanishka T. Nagar", address: "42, Usman Road, T. Nagar, Chennai – 600017", phone: "044 5550 1100", hours: "Mon–Sun 10am–9:30pm", services: ["Pickup", "Device setup", "Repairs", "Returns"] },
+      { name: "Kanishka Gandhipuram", address: "118, Cross Cut Road, Gandhipuram, Coimbatore – 641012", phone: "0422 555 1200", hours: "Mon–Sun 10am–9:30pm", services: ["Pickup", "Repairs", "Returns"] },
+      { name: "Kanishka Anna Nagar", address: "27, Anna Nagar Main Road, Madurai – 625020", phone: "0452 555 1300", hours: "Mon–Sun 10am–9pm", services: ["Pickup", "Device setup", "Recycling"] },
+      { name: "Kanishka Thillai Nagar", address: "9, Thillai Nagar Main Road, Tiruchirappalli – 620018", phone: "0431 555 1400", hours: "Mon–Sun 10am–9pm", services: ["Pickup", "Repairs", "Recycling"] },
+      { name: "Kanishka Fairlands", address: "61, Omalur Main Road, Salem – 636004", phone: "0427 555 1500", hours: "Mon–Sun 10am–9pm", services: ["Pickup", "Device setup", "Returns"] },
     ],
   },
   about: {
-    eyebrow: "About Ohmly",
+    eyebrow: "About Kanishka",
     title: "Electronics, properly sourced.",
-    intro: "We started Ohmly in Chennai because buying a charger shouldn't mean gambling on a counterfeit. We carry a tighter range, test what we sell and stand behind it.",
+    intro: "We started Kanishka Computer & Mobiles in Chennai because buying a charger shouldn't mean gambling on a counterfeit. We carry a tighter range, test what we sell and stand behind it.",
     sections: [
       {
         heading: "What we believe",
@@ -200,7 +200,7 @@ export const contentPages: Record<string, ContentPage> = {
         heading: "How it works",
         bullets: [
           "Back up your data, sign out of your accounts and reset the device.",
-          "Drop it at an Ohmly store, or request a free prepaid mailer from support.",
+          "Drop it at a Kanishka store, or request a free prepaid mailer from support.",
           "We wipe it to industry standards, then refurbish it or send it to a registered recycler, in line with India's E-Waste Management Rules.",
         ],
       },
@@ -214,7 +214,7 @@ export const contentPages: Record<string, ContentPage> = {
   "gift-cards": {
     eyebrow: "Gift cards",
     title: "The easy gift for anyone with a charger",
-    intro: "Digital gift cards arrive by email within minutes and never expire. They work online and in every Ohmly store.",
+    intro: "Digital gift cards arrive by email within minutes and never expire. They work online and in every Kanishka store.",
     cards: [
       { title: "₹500", body: "Covers a case, cable or smart bulb." },
       { title: "₹1,000", body: "Enough for a fast charger or power bank." },

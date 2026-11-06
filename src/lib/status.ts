@@ -63,5 +63,5 @@ export const paymentMethodLabels: Record<PaymentMethod, string> = {
 export const deliveryMethods: Record<DeliveryMethod, { label: string; detail: string; eta: string; price: number }> = {
   standard: { label: "Standard delivery", detail: "3–5 business days, across India", eta: "Arrives in 3–5 business days.", price: 49 },
   "next-day": { label: "Next-day delivery", detail: "Tamil Nadu only, order by 8pm", eta: "Arrives tomorrow.", price: 99 },
-  pickup: { label: "Store pickup", detail: "Ready in 2 hours", eta: "Ready within 2 hours at Ohmly T. Nagar.", price: 0 },
+  pickup: { label: "Store pickup", detail: "Ready in 2 hours", eta: "Ready within 2 hours at Kanishka T. Nagar.", price: 0 },
 };

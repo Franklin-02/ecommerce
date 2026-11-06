@@ -71,7 +71,7 @@ export const orders: Order[] = Array.from({ length: ORDER_COUNT }, (_, index) =>
 
   return {
     id: `ord_${String(index + 1).padStart(4, "0")}`,
-    number: `OHM-${104900 - index * 7}`,
+    number: `KCM-${104900 - index * 7}`,
     customerId: customer.id,
     customerName: customer.name,
     customerEmail: customer.email,

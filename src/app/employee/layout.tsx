@@ -5,7 +5,7 @@ import { getCurrentEmployee } from "@/services/employee";
 import { getNotifications } from "@/services/operations";
 
 export const metadata: Metadata = {
-  title: { default: "Employee portal", template: "%s | Ohmly Employee" },
+  title: { default: "Employee portal", template: "%s | Kanishka Employee" },
 };
 
 export default async function EmployeeLayout({ children }: { children: React.ReactNode }) {

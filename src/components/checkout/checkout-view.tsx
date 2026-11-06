@@ -244,7 +244,7 @@ function CheckoutForm() {
 
         {pickup ? (
           <div className="col-span-full rounded-xl bg-surface-muted p-4 text-sm">
-            <p className="font-semibold text-ink-950">Pick up from Ohmly T. Nagar</p>
+            <p className="font-semibold text-ink-950">Pick up from Kanishka T. Nagar</p>
             <p className="mt-0.5 text-ink-600">
               {STORE_ADDRESS.line1}, {STORE_ADDRESS.line2}, {STORE_ADDRESS.city} – {STORE_ADDRESS.pincode}. Bring your order confirmation and a photo ID.
             </p>

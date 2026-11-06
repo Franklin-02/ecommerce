@@ -43,7 +43,7 @@ export function ProductsView() {
       showToast(`${patch.name} updated`);
     } else {
       const id = newId("prd");
-      const sku = `OHM-${brand.name.slice(0, 3).toUpperCase()}-${id.slice(-4).toUpperCase()}`;
+      const sku = `KCM-${brand.name.slice(0, 3).toUpperCase()}-${id.slice(-4).toUpperCase()}`;
       productsCollection.add({
         ...patch,
         id,
